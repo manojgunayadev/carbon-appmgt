@@ -105,6 +105,21 @@
             <groupId>org.wso2.carbon.identity</groupId>
             <artifactId>org.wso2.carbon.identity.entitlement.proxy</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity</groupId>
+            <artifactId>org.wso2.carbon.identity.entitlement</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.balana</groupId>
+            <artifactId>org.wso2.balana</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.wso2.carbon.identity</groupId>
+            <artifactId>org.wso2.carbon.identity.entitlement</artifactId>
+            <version>5.0.2</version>
+        </dependency>
 
     </dependencies>
 
@@ -238,16 +253,17 @@
                                 <bundleDef>org.wso2.carbon:org.wso2.carbon.sequences.stub:${carbon.sequences.stub.version}</bundleDef>
                                 <bundleDef>org.wso2.carbon.identity:org.wso2.carbon.identity.user.registration.stub:compatible:${carbon.identity.base.version}</bundleDef>
                                 <bundleDef>org.wso2.carbon:org.wso2.carbon.bam.presentation.stub:compatible:${bam.presentation.stub.version}</bundleDef>
-				<bundleDef>org.wso2.carbon:org.wso2.carbon.mediation.security.stub:compatible:${carbon.mediation.security.stub}</bundleDef>
+				                <bundleDef>org.wso2.carbon:org.wso2.carbon.mediation.security.stub:compatible:${carbon.mediation.security.stub}</bundleDef>
                                 <bundleDef>org.wso2.carbon.identity:org.wso2.carbon.identity.entitlement.stub:compatible:${carbon.identity.base.version}</bundleDef>
                                 <bundleDef>org.wso2.carbon.identity:org.wso2.carbon.identity.entitlement.proxy:compatible:${carbon.identity.base.version}</bundleDef>
-				<bundleDef>org.wso2.carbon.appmgt:org.wso2.carbon.appmgt.sample.deployer:${carbon.appmgt.version}</bundleDef>
+				                <bundleDef>org.wso2.carbon.appmgt:org.wso2.carbon.appmgt.sample.deployer:${carbon.appmgt.version}</bundleDef>
                             </bundles>
                             <importBundles>
-                                <importBundleDef>org.wso2.carbon.identity:org.wso2.carbon.identity.authentication:compatible:${carbon.identity.auth.version}</importBundleDef>
+                               <importBundleDef>org.wso2.carbon.identity:org.wso2.carbon.identity.authentication:compatible:${carbon.identity.auth.version}</importBundleDef>
+
                                 <!--<importBundleDef>org.wso2.carbon.identity:org.wso2.carbon.identity.authenticator.thrift:compatible:${carbon.identity.thrift.auth.version}</importBundleDef>-->
                                 <!--<importBundleDef>libthrift.wso2:libthrift:0.8.0.wso2v1</importBundleDef>-->
-				<importBundleDef>org.wso2.carbon.store:jaggery-scxml-executors:${carbon.store.version}</importBundleDef>
+			              	<importBundleDef>org.wso2.carbon.store:jaggery-scxml-executors:${carbon.store.version}</importBundleDef>
                             </importBundles>
                             <importFeatures>
                                 <importFeatureDef>org.wso2.carbon.core.server:compatible:${carbon.kernel.base.version}</importFeatureDef>
