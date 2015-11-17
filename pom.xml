@@ -401,11 +401,6 @@
         <artifactId>org.wso2.carbon.identity.application.mgt.stub</artifactId>
         <version>${identity.application.mgt.version}</version>
       </dependency>
-        <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
-            <artifactId>org.wso2.carbon.identity.entitlement</artifactId>
-            <version>${identity.entitlement.version}</version>
-        </dependency>
       <dependency>
         <groupId>org.wso2.carbon.identity</groupId>
         <artifactId>org.wso2.carbon.identity.entitlement.stub</artifactId>
